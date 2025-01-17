@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>KL Unversity</title> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
+  <style> 
+    iframe {width: 200px;height: 200px;border:2px solid red;padding:10px;border-radius:20px;} 
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    } 
+ 
+    .container { 
+      display: grid; 
+      grid-template-rows: auto 1fr auto; 
+      grid-template-columns: 1fr 3fr; 
+      gap: 10px; 
+      grid-template-areas: 
+        "logo nav" 
+        "image details" 
+        "social social"; 
+      width: 100%; 
+      height: 100vh; 
+      padding: 10px; 
+      box-sizing: border-box; 
+    } 
+ 
+    .logo { 
+      grid-area: logo; 
+      text-align: center; 
+      padding: 10px; 
+    } 
+ 
+    .logo img { 
+      max-width: 100px; 
+      height: auto; 
+    } 
+ 
+    .nav { 
+      grid-area: nav; 
+      display: flex; 
+      justify-content: space-around; 
+      align-items: center; 
+      padding: 10px; 
+      background: #f8f8f8; 
+      border: 1px solid #ddd; 
+    } 
+ 
+    .nav a { 
+      text-decoration: none; 
+      color: #333; 
+      font-size: 16px; 
+      transition: color 0.3s; 
+    } 
+ 
+    .nav a:hover { 
+      color: #007bff; 
+    } 
+    .details { 
+      grid-area: details; 
+      padding: 20px; 
+      border: 1px solid #ddd; 
+      overflow-y: auto; 
+    } 
+ 
+    .details h2 { 
+      margin-top: 0; 
+      font-size: 20px; 
+    } 
+ 
+    .details p { 
+      text-align: justify; 
+      line-height: 1.6; 
+      margin: 10px 0; 
+    } 
+ 
+    .social { 
+      grid-area: social; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 20px; 
+      padding: 10px; 
+      background: #f8f8f8; 
+      border: 1px solid #ddd; 
+    } 
+ 
+    .social a { 
+      font-size: 24px; 
+      color: #333; 
+      text-decoration: none; 
+      transition: color 0.3s; 
+    } 
+ 
+    .social a:hover { 
+      color: #007bff; 
+    } 
+ 
+    @media (max-width: 768px) { 
+      .container { 
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+          "logo" 
+          "nav" 
+          "image" 
+          "details" 
+          "social"; 
+        height: auto; 
+      } 
+ 
+      .nav { 
+        flex-direction: column; 
+        gap: 10px; 
+      } 
+ 
+      .social { 
+        flex-direction: row; 
+      } 
+ 
+      .details { 
+        padding: 15px; 
+      } 
+    } 
+ 
+    @media (max-width: 480px) { 
+      .logo img { 
+        max-width: 80px; 
+      } 
+ 
+      .nav a { 
+        font-size: 10px; 
+      } 
+ 
+      .details h2 { 
+        font-size: 10px; 
+      } 
+ 
+      .social a { 
+        font-size: 10px; 
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+  <div class="container"> 
+    <!-- Logo Section --> 
+    <div class="logo"> 
+      <img src="Logo.png" alt="Logo"> 
+    </div> 
+ 
+    <!-- Navigation --> 
+    <div class="nav"> 
+      <a href="#home">Home</a> 
+      <a href="#about">About</a> 
+      <a href="#portfolio">Portfolio</a> 
+      <a href="Login.html">Login</a>
+      <a href="Registration.html">Registration</a>
+    </div> 
+ 
+    <!-- Product Image --> 
+    <div class="Image"> 
+      <img src="Pic.jpg" alt="Image" style="width: 200px; height: 200px; border: 2px solid red; padding: 10px; border-radius: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zCMSJu3YISg?si=XMCpFyZANz6nxO9C" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen></iframe>
+    </div> 
+ 
+    <!-- Product Details --> 
+    <div class="details"> 
+      <h2>KONERU LAKSHMAIAH EDUCATION FOUNDATION</h2> 
+      <p> 
+        The KL University Bachupally Campus, located in Hyderabad, Telangana, offers programs in 
+        Engineering (CSE, IT, ECE) and Management (MBA). Known for its modern infrastructure, 
+        state-of-the-art labs, and learner-centric approach, the campus provides a holistic education. 
+      </p> 
+      <p><strong>Domain:</strong>CSE,ECE,CSIT,AIDS,BCA</p>
+<p><strong>Batch:</strong> 2023</p> 
+<p><strong>Year:</strong> 2024</p> 
+    </div> 
+ 
+    <!-- Social Icons --> 
+    <div class="social"> 
+      <a href="#whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#telegram" aria-label="Telegram"><i class="fab fa-telegram"></i></a> 
+      <a href="#facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a> 
+      <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a> 
+      <a href="#gmail" aria-label="Gmail"><i class="fas fa-envelope"></i></a> 
+    </div> 
+  </div> 
+</body> 
+</html>

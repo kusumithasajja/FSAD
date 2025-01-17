@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <style> 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .success { 
+            color: green; 
+        } 
+
+        .error { 
+            color: red; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <fieldset> 
+        <legend>Login Details</legend> 
+        <input type="text" id="username" placeholder="User Name"> <br><br> 
+        <input type="password" id="userpass" placeholder="Password"> <br><br> 
+        <button onclick="login()">Login</button> 
+        <br><br> 
+        <h1 id="res"></h1> 
+    </fieldset> 
+    <script> 
+        let login = () => { 
+            let username = document.getElementById("username").value; 
+            let userpass = document.getElementById("userpass").value;  
+            let h1 = document.getElementById("res"); 
+
+            if (username === "2320030302" && userpass === "kususajja") { 
+                h1.innerHTML = "Login Success"; 
+                h1.classList.add("success"); 
+                h1.classList.remove("error"); 
+            } else { 
+                h1.innerHTML = "Login Fail"; 
+                h1.classList.add("error"); 
+                h1.classList.remove("success"); 
+            } 
+        } 
+    </script> 
+</body> 
+</html>
